@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 3: Atributos fundamentales</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        body {
+            background: #232946;
+            color: #fff;
+        }
+        .container {
+            background: #232946;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            margin-top: 40px;
+        }
+        h2 {
+            color: #eebbc3;
+            margin-top: 30px;
+        }
+        .exercise-block {
+            background: #393e6c;
+            border: 1px solid #eebbc3;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .exercise-block div, .exercise-block p, .exercise-block ol {
+            color: #fff;
+            font-size: 18px;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .btn {
+            background: #393e6c;
+            color: #eebbc3;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: #232946;
+        }
+        pre {
+            background: #181c2f;
+            color: #eebbc3;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="exercise-block">
+            <h2>Ejercicio 1</h2>
+            <p>Respuesta:</p>
+            <pre><code>
+<div id="header">Cabecera de la pagina</div>
+<div id="main-content">Contenido principal de la pagina</div>
+<div id="footer">Pie de pagina</div>
+            </code></pre>
+        </div>
+
+        <div class="exercise-block">
+            <h2>Ejercicio 2</h2>
+            <p>Respuesta:</p>
+            <pre><code>
+<div class="producto">Producto normal 1</div>
+<div class="producto oferta">Producto en oferta 1</div>
+<div class="producto oferta">Producto en oferta 2</div>
+<div class="producto destacado">Producto destacado</div>
+            </code></pre>
+        </div>
+
+        <div class="exercise-block">
+            <h2>Ejercicio 3</h2>
+            <p>Respuesta:</p>
+            <pre><code>
+<div style="background-color: green; color: white; padding: 20px; text-align: center; border-radius: 10px;">
+    Mi DIV con estilos personalizados
+</div>
+            </code></pre>
+        </div>
+
+        <div class="exercise-block">
+            <h2>Ejercicio 4</h2>
+            <p>Respuesta:</p>
+            <pre><code>
+<div id="tarjeta-especial" class="tarjeta premium" style="background-color: gold; text-align: center; padding: 15px; border-radius: 8px;" title="Esta es una tarjeta premium especial">
+    Tarjeta Premium Especial
+</div>
+            </code></pre>
+        </div>
+
+        <div class="exercise-block">
+            <h2>Ejercicio 5</h2>
+            <p>Respuesta:</p>
+            <pre><code>
+<div id="mi-caja-1">Caja 1</div>
+<div id="mi-caja-2">Caja 2</div>
+<div class="producto oferta destacado">Producto</div>
+<div style="color: red; background: blue;">Texto</div>
+            </code></pre>
+        </div>
+
+        <div class="nav-buttons">
+            <a class="btn" href="modulo2.html">Anterior</a>
+            <a class="btn" href="modulo4.html">Siguiente modulo</a>
+        </div>
+    </div>
+</body>
+</html>

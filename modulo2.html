@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 2: Estructura básica del DIV</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        body {
+            background: #232946;
+            color: #fff;
+        }
+        .container {
+            background: #232946;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            margin-top: 40px;
+        }
+        h2 {
+            color: #eebbc3;
+            margin-top: 30px;
+        }
+        .exercise-block {
+            background: #393e6c;
+            border: 1px solid #eebbc3;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .exercise-block div, 
+        .exercise-block p {
+            font-size: 18px;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .btn {
+            background: #393e6c;
+            color: #eebbc3;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: #232946;
+        }
+        .codigo-ejemplo {
+            background: #181c2f;
+            color: #eebbc3;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 17px;
+            margin: 8px 0;
+            font-family: monospace;
+            display: block;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="exercise-block">
+            <h2>Ejercicio 1</h2>
+            <p>Codigo aplicado:</p>
+            <div class="codigo-ejemplo">
+&lt;div&gt;
+    &lt;h1&gt;Mi pagina web&lt;/h1&gt;
+    &lt;p&gt;Bienvenido a mi sitio&lt;/p&gt;
+&lt;/div&gt;
+            </div>
+            <p>Resultado (como se ve en la página):</p>
+            <div style="padding:10px; background:#181c2f; border-radius:8px;">
+                <h1>Mi pagina web</h1>
+                <p>Bienvenido a mi sitio</p>
+            </div>
+        </div>
+
+        <div class="exercise-block">
+            <h2>Ejercicio 2</h2>
+            <p>Código aplicado:</p>
+            <div class="codigo-ejemplo">
+&lt;div class="casa"&gt;
+    Casa
+    &lt;div class="planta-alta"&gt;
+        Planta Alta
+        &lt;div class="dormitorio"&gt;Dormitorio&lt;/div&gt;
+        &lt;div class="bano"&gt;Baño&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="planta-baja"&gt;
+        Planta Baja
+        &lt;div class="sala"&gt;Sala&lt;/div&gt;
+        &lt;div class="cocina"&gt;Cocina&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </div>
+            <p>Resultado (como se ve en la página):</p>
+            <div style="padding:10px; background:#181c2f; border-radius:8px;">
+                Casa
+                <div>Planta Alta
+                    <div>Dormitorio</div>
+                    <div>Baño</div>
+                </div>
+                <div>Planta Baja
+                    <div>Sala</div>
+                    <div>Cocina</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="exercise-block">
+            <h2>Ejercicio 3</h2>
+            <p>Código aplicado:</p>
+            <div class="codigo-ejemplo">
+&lt;div&gt;
+    &lt;h2&gt;Encabezado dentro de un DIV&lt;/h2&gt;
+    &lt;p&gt;Este es un párrafo dentro de un DIV&lt;/p&gt;
+&lt;/div&gt;
+            </div>
+            <p>Resultado (como se ve en la página):</p>
+            <div style="padding:10px; background:#181c2f; border-radius:8px;">
+                <h2>Encabezado dentro de un DIV</h2>
+                <p>Este es un párrafo dentro de un DIV</p>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a class="btn" href="modulo1.html">Anterior módulo</a>
+            <a class="btn" href="modulo3.html">Siguiente módulo</a>
+        </div>
+    </div>
+</body>
+</html>

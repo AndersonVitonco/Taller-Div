@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 5: Modelo de caja (Box Model)</title>
+    <style>
+        body {
+            background: #232946;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+        .container {
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+        h2 {
+            color: #eebbc3;
+            margin-top: 30px;
+        }
+        .exercise-block {
+            background: #393e6c;
+            border: 1px solid #eebbc3;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 40px;
+        }
+        .btn {
+            background: #393e6c;
+            color: #eebbc3;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: #232946;
+        }
+        code {
+            background: #181c2f;
+            color: #eebbc3;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 15px;
+            display: block;
+            margin: 8px 0;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Módulo 5: Modelo de caja (Box Model)</h1>
+
+        <div class="exercise-block">
+            <h2>Ejercicio 1</h2>
+            <p><strong>Código:</strong></p>
+            <code>
+&lt;div id="mi-caja-completa" style="width: 250px; height: 80px; padding: 20px; border: 3px solid #3498db; margin: 25px; background-color: #fff9c4; text-align: center; display: flex; align-items: center; justify-content: center; font-weight: bold;"&gt;Mi primera caja completa&lt;/div&gt;
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <div id="mi-caja-completa" style="width: 250px; height: 80px; padding: 20px; border: 3px solid #3498db; margin: 25px; background-color: #fff9c4; text-align: center; display: flex; align-items: center; justify-content: center; font-weight: bold;">Mi primera caja completa</div>
+        </div>
+
+        <div class="exercise-block">
+            <h2>Ejercicio 2</h2>
+            <p><strong>Código:</strong></p>
+            <code>
+&lt;div class="caja-content-box" style="width: 200px; height: 100px; padding: 25px; border: 5px solid #e74c3c; background: #ffebee; box-sizing: content-box; text-align: center; margin: 10px; display: flex; align-items: center; justify-content: center;"&gt;content-box&lt;br&gt;&lt;small&gt;Ancho real: 260px&lt;/small&gt;&lt;/div&gt;
+
+&lt;div class="caja-border-box" style="width: 200px; height: 100px; padding: 25px; border: 5px solid #27ae60; background: #e8f5e8; box-sizing: border-box; text-align: center; margin: 10px; display: flex; align-items: center; justify-content: center;"&gt;border-box&lt;br&gt;&lt;small&gt;Ancho real: 200px&lt;/small&gt;&lt;/div&gt;
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <div class="caja-content-box" style="width: 200px; height: 100px; padding: 25px; border: 5px solid #e74c3c; background: #ffebee; box-sizing: content-box; text-align: center; margin: 10px; display: flex; align-items: center; justify-content: center;">content-box<br><small>Ancho real: 260px</small></div>
+
+            <div class="caja-border-box" style="width: 200px; height: 100px; padding: 25px; border: 5px solid #27ae60; background: #e8f5e8; box-sizing: border-box; text-align: center; margin: 10px; display: flex; align-items: center; justify-content: center;">border-box<br><small>Ancho real: 200px</small></div>
+        </div>
+
+        <div class="exercise-block">
+            <h2>Ejercicio 3</h2>
+            <p><strong>Código:</strong></p>
+            <code>
+&lt;div id="caja-espaciado" style="padding: 30px 20px 10px; margin: 40px auto 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; width: 300px; text-align: center; border-radius: 8px;"&gt;DIV con espaciado específico&lt;/div&gt;
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <div id="caja-espaciado" style="padding: 30px 20px 10px; margin: 40px auto 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; width: 300px; text-align: center; border-radius: 8px;">DIV con espaciado específico</div>
+        </div>
+
+        <div class="exercise-block">
+            <h2>Ejercicio 4</h2>
+            <p><strong>Código:</strong></p>
+            <code>
+&lt;div class="caja-exacta-facil" style="width: 400px; padding: 0 25px; border: 3px solid #333; background: #3498db; color: white; text-align: center; box-sizing: border-box; margin: 20px auto; line-height: 60px;"&gt;DIV de exactamente 400px de ancho total&lt;/div&gt;
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <div class="caja-exacta-facil" style="width: 400px; padding: 0 25px; border: 3px solid #333; background: #3498db; color: white; text-align: center; box-sizing: border-box; margin: 20px auto; line-height: 60px;">DIV de exactamente 400px de ancho total</div>
+        </div>
+
+        <div class="exercise-block">
+            <h2>Ejercicio 5</h2>
+            <p><strong>Código:</strong></p>
+            <code>
+&lt;div class="mi-div-facil" style="width: 300px; padding: 40px; border: 10px solid red; background: yellow; box-sizing: border-box; text-align: center; font-weight: bold; margin: 20px auto;"&gt;DIV corregido - Exactamente 300px de ancho&lt;/div&gt;
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <div class="mi-div-facil" style="width: 300px; padding: 40px; border: 10px solid red; background: yellow; box-sizing: border-box; text-align: center; font-weight: bold; margin: 20px auto;">DIV corregido - Exactamente 300px de ancho</div>
+        </div>
+
+        <div class="nav-buttons">
+            <a class="btn" href="modulo4.html">Anterior</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 1: Introduccion al elemento DIV</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        body {
+            background: #232946;
+            color: #fff;
+        }
+        .container {
+            background: #232946;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            margin-top: 40px;
+        }
+        .header {
+            background: #393e6c;
+            color: #eebbc3;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        h2 {
+            color: #eebbc3;
+            margin-top: 30px;
+        }
+        .exercise-block {
+            background: #393e6c;
+            border: 1px solid #eebbc3;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .exercise-block div, .exercise-block p {
+            color: #fff;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        pre {
+            background: #181c2f;
+            padding: 15px;
+            border-radius: 8px;
+            color: #eebbc3;
+            overflow-x: auto;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 40px;
+        }
+        .btn {
+            background: #393e6c;
+            color: #eebbc3;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 10px;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: #232946;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Modulo 1: Introduccion al elemento DIV</h1>
+            <p>Fundamentos del elemento mas versatil de HTML</p>
+        </div>
+
+        <div class="exercise-block">
+            <h2>Ejercicio 1</h2>
+            <p><strong>Codigo:</strong></p>
+            <pre>
+&lt;div style="padding: 10px; background: blue; border-radius: 8px; text-align: center;"&gt;
+    ¡Mi primer DIV!
+&lt;/div&gt;
+            </pre>
+            <p><strong>Ejecutado:</strong></p>
+            <div style="padding: 10px; background: blue; border-radius: 8px; text-align: center;">
+                ¡Mi primer DIV!
+            </div>
+        </div>
+
+        <div class="exercise-block">
+            <h2>Ejercicio 2</h2>
+            <p><strong>Codigo:</strong></p>
+            <pre>
+&lt;div style="padding: 10px; background: blue; border-radius: 8px;"&gt;
+    DIV Padre
+    &lt;div style="background: lightblue; margin: 5px; padding: 8px; border-radius: 5px;"&gt;
+        DIV Hijo 1
+    &lt;/div&gt;
+    &lt;div style="background: lightblue; margin: 5px; padding: 8px; border-radius: 5px;"&gt;
+        DIV Hijo 2
+    &lt;/div&gt;
+&lt;/div&gt;
+            </pre>
+            <p><strong>Ejecutado:</strong></p>
+            <div style="padding: 10px; background: blue; border-radius: 8px;">
+                DIV Padre
+                <div style="background: lightblue; margin: 5px; padding: 8px; border-radius: 5px;">DIV Hijo 1</div>
+                <div style="background: lightblue; margin: 5px; padding: 8px; border-radius: 5px;">DIV Hijo 2</div>
+            </div>
+        </div>
+
+        <div class="exercise-block">
+            <h2>Ejercicio 3</h2>
+            <p><strong>Codigo:</strong></p>
+            <pre>
+&lt;p&gt;Los DIVs son elementos de bloque y los SPAN son elementos en linea.&lt;/p&gt;
+            </pre>
+            <p><strong>Ejecutado:</strong></p>
+            <p>
+                Los DIVs son elementos de bloque y los SPAN son elementos en linea.
+            </p>
+        </div>
+
+        <div class="nav-buttons">
+            <a class="btn" href="modulo2.html">Siguiente modulo</a>
+        </div>
+    </div>
+</body>
+</html>
